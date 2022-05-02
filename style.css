@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Outfit:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* SideBAr or Menu */
+
+.sidebar {
+  position: absolute;
+  background-color: rgb(208, 195, 195);
+  /* width: 250px; */
+  font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'Outfit', sans-serif; */
+  height: 100vh;
+  transition: transform 0.5s ease-in;
+}
+
+.sidebar nav {
+  padding: 35px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 24px;
+  padding: 22px 0;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebarGo {
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+.hamBurger {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  left: 10px;
+}
+
+.ham {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.close {
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 87vw;
+}
+
+/* Home Page starts */
+
+.infoContainer {
+  /* background-color: rgb(183, 31, 221); */
+  height: 55vh;
+  width: 78vw;
+  margin: 115px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devInfo {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+  font-size: 3em;
+}
+
+.name {
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about {
+  font-size: 2.2em;
+}
+
+.moreabout {
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 27px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 8px 12px;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 3px 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+
+.devPic img {
+  height: 55vh;
+}
+
+/* Blogs page starts here */
+
+.container {
+  display: flex;
+}
+
+.blogContainer {
+  margin: 88px;
+}
+.blogContainer h1 {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 25px;
+}
+
+.blogItem {
+  margin: 24px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.blogItem p {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Contact Form Starts */
+.contactform {
+  padding: 0 34px;
+  font-family: 'Outfit', sans-serif;
+  margin: 88px;
+}
+
+.contactform h1 {
+  font-family: 'Fira Sans', sans-serif;
+  /* padding: 12px 0; */
+}
+
+.contactform form div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform form {
+  margin: 0 40px;
+}
+
+.contactform form div input {
+  /* width: 30vw; */
+  border-radius: 5px;
+  margin: 5px 0 0 0;
+  padding: 3.5px;
+}
+
+#emailHelp {
+  font-size: 11px;
+  color: midnightblue;
+  margin: 0 5px;
+  padding: 3px 0 0 0;
+}
+
+#form-check {
+  flex-direction: row;
+}
+
+#form-check input {
+  width: 22px;
+  margin: 2px 0;
+}
+
+.btn-sm {
+  font-size: 10px;
+  padding: 7px 12px;
+  margin: 10px 0;
+}
+
+/* Intro Page Starts and some universal properties also like h1, p, h2 of all pages */
+.main h1 {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 12px;
+}
+
+.main h2 {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 12px;
+  font-size: 28px;
+}
+
+.main p {
+  font-family: 'Source Code Pro', monospace;
+  margin: 12px;
+}
+
+.introContainer {
+  margin: 88px;
+}
+
+.skillContainer {
+  padding: 12px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+}
+
+.skill {
+  width: 265px;
+  height: 6px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.hundered {
+  width: 280px;
+  background-color: blueviolet;
+}
+
+.Seventy5 {
+  width: 210px;
+  background-color: aqua;
+}
+
+.fifty {
+  width: 140px;
+  background-color: darkgoldenrod;
+}
+
+.twenty5 {
+  width: 70px;
+  background-color: yellow;
+}
+
+/* Services Page starts here */
+.servicesContainer {
+  margin: 88px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1105px) {
+  /* .sidebar {
+    transform: translate(-443px, 0px);
+    position: absolute;
+  } */
+
+  .buttons {
+    font-size: 10px;
+  }
+
+  .devInfo {
+    font-size: 13px;
+  }
+
+  .devPic {
+    display: none;
+  }
+
+  .introContainer,
+  .blogContainer,
+  .contactform,
+  .servicesContainer {
+    margin: 50px 8px;
+  }
+}
